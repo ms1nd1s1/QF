@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QWABE FOUNDATION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ffffff;
+      --accent: #00bfff;
+      --background: #000000;
+      --text: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--background);
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--background);
+    }
+
+    nav a {
+      color: var(--background);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      transition: color 0.3s, transform 0.3s;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent);
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background: var(--accent);
+      color: black;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 4rem 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+
+    footer {
+      background: var(--primary);
+      color: black;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      section {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2>QWABE FOUNDATION</h2>
+    </div>
+    <nav>
+      <a href="home.html" target="_blank">Home</a>
+      <a href="about.html" target="_blank">About Us</a>
+      <a href="programs.html" target="_blank">Programs</a>
+      <a href="involved.html" target="_blank">Get Involved</a>
+      <a href="events.html" target="_blank">Events</a>
+      <a href="donate.html" target="_blank">Donate</a>
+      <a href="contact.html" target="_blank">Contact</a>
+      <a href="calendar.html" target="_blank">Calendar</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to the QWABE FOUNDATION</h1>
+    <p>Empowering communities through education, opportunity, and support.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>The Qwabe Foundation is a beacon of hope, committed to empowering underprivileged youth through access to education, mentorship, and sustainable development initiatives. Our mission is to create a generation of changemakers who will build a better South Africa.</p>
+  </section>
+
+  <section id="programs">
+    <h2>Programs</h2>
+    <p>We run mentorship programs, academic support groups, scholarship drives, and entrepreneurial bootcamps that prepare young people to thrive in their chosen paths.</p>
+  </section>
+
+  <section id="involved">
+    <h2>Get Involved</h2>
+    <p>Join us as a volunteer, become a mentor, or contribute your expertise to our youth development efforts. Every hand helps shape a future.</p>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <p>Our upcoming events include leadership conferences, community clean-up drives, and innovation hackathons. Stay connected and participate.</p>
+  </section>
+
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Your donation makes a tangible difference in the lives of our youth. Support a scholarship, fund a workshop, or help us expand our reach.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have questions or want to reach out? Email us at contact@qwabefoundation.org or call us at +27 11 123 4567.</p>
+  </section>
+
+  <section id="calendar">
+    <h2>Calendar</h2>
+    <p>View our annual calendar of impactful programs, awareness days, and strategic campaigns that build momentum throughout the year.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 QWABE FOUNDATION. Designed with excellence and purpose.</p>
+  </footer>
+</body>
+</html>
